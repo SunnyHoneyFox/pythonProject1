@@ -1,8 +1,8 @@
-fist = (123)
+fist = 123
 print(fist)
-second = (456)
+second = 456
 print(second)
-third = (789)
+third = 789
 print(third)
 if fist == second and second == third:
     print(3)
@@ -11,11 +11,11 @@ elif fist == second or fist == third or second == third:
 elif fist != second and second != third:
     print(0)
 #
-fist = (42)
+fist = 42
 print(fist)
-second = (69)
+second = 69
 print(second)
-third = (42)
+third = 42
 print(third)
 if fist == second and second == third:
     print(3)
