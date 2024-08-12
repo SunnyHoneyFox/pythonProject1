@@ -32,7 +32,6 @@ class Pegasus(Horse, Eagle):
         print(self.sound)
 
 
-# Пример использования
 p1 = Pegasus()
 
 print(p1.get_pos())
