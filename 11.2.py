@@ -27,5 +27,5 @@ def introspection_info(obj):
 
 
 if __name__ == "__main__":
-    for_example = introspection_info('example')
+    for_example = introspection_info('Hello World')
     print(for_example)
