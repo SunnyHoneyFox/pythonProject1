@@ -79,19 +79,15 @@ class RunnerTest(unittest.TestCase):
 
     def test_walk(self):
         try:
-
-            invalid_runner = Runner('Ник', speed=-5)
-            logging.info('"test_walk" выполнен успешно')
+            Runner('Ник', speed=-5)
         except ValueError as e:
-            logging.warning('Неверная скорость для Runner: %s', e)
+            logging.warning('Неверная скорость для Runner: %s - %s', e, type(e).__name__)
 
     def test_run(self):
         try:
-
-            invalid_runner = Runner(123, speed=10)
-            logging.info('"test_run" выполнен успешно')
+            Runner(123, speed=10)
         except TypeError as e:
-            logging.exception('Неверный тип данных для объекта Runner')
+            logging.exception('Неверный тип данных для объекта Runner: %s - %s', e, type(e).__name__)
 
 
 if __name__ == '__main__':
