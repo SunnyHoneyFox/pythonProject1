@@ -1,8 +1,9 @@
-2024-11-24 03:00:33,356 - ERROR - Неверный тип данных для объекта Runner
+2024-11-24 03:23:03,110 - ERROR - Неверный тип данных для объекта Runner: Имя может быть только строкой, передано int - TypeError
 Traceback (most recent call last):
-  File "D:\Marina\PythonProjectsForUniversity\module_12\test_12_4.py", line 91, in test_run
-    invalid_runner = Runner(123, speed=10)
+  File "D:\Marina\PythonProjectsForUniversity\module_12\test_12_4.py", line 88, in test_run
+    Runner(123, speed=10)
+    ~~~~~~^^^^^^^^^^^^^^^
   File "D:\Marina\PythonProjectsForUniversity\module_12\test_12_4.py", line 18, in __init__
     raise TypeError(f'Имя может быть только строкой, передано {type(name).__name__}')
 TypeError: Имя может быть только строкой, передано int
-2024-11-24 03:00:33,358 - WARNING - Неверная скорость для Runner: Скорость не может быть отрицательной, сейчас -5
+2024-11-24 03:23:03,112 - WARNING - Неверная скорость для Runner: Скорость не может быть отрицательной, сейчас -5 - ValueError
